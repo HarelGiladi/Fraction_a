@@ -35,14 +35,6 @@ namespace ariel
 
             int getDenominator();
 
-            friend Fraction operator+(const Fraction&, const Fraction&);
-
-            friend Fraction operator-(const Fraction&, const Fraction&);
-
-            friend Fraction operator*(const Fraction&, const Fraction&);
-
-            friend Fraction operator/(const Fraction&, const Fraction&);
-
             
             friend bool operator>(const Fraction&, const Fraction&);
 
@@ -57,6 +49,16 @@ namespace ariel
             friend bool operator==(const Fraction&, const Fraction&);
 
             friend bool operator!=(const Fraction&, const Fraction&);
+            
+
+            friend Fraction operator+(const Fraction&, const Fraction&);
+
+            friend Fraction operator-(const Fraction&, const Fraction&);
+
+            friend Fraction operator*(const Fraction&, const Fraction&);
+
+            friend Fraction operator/(const Fraction&, const Fraction&);
+
 
             friend ostream& operator<<(ostream&, const Fraction&);
 
