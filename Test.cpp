@@ -140,22 +140,22 @@ namespace ariel
 
     TEST_CASE("Rounding Test")
     {
-        Fraction hg1(2, 5);
+        Fraction hg1(3, 5);
         float hg2 = 0.2001; 
         Fraction hg3 = hg1 + hg2; 
-        CHECK(((hg3.getNumerator() == 3) && (hg3.getDenominator() == 5)));
+        CHECK(((hg3.getNumerator() == 4) && (hg3.getDenominator() == 5)));
 
         hg2 = 0.2001;
         hg3 = hg1 - hg2; 
-        CHECK(((hg3.getNumerator() == 1) && (hg3.getDenominator() == 5)));
+        CHECK(((hg3.getNumerator() == 2) && (hg3.getDenominator() == 5)));
 
         hg2 = 0.2001;
         hg3 = hg1 * hg2; 
-        CHECK(((hg3.getNumerator() == 2) && (hg3.getDenominator() == 25)));
+        CHECK(((hg3.getNumerator() == 3) && (hg3.getDenominator() == 25)));
 
         hg2 = 0.2001;
         hg3 = hg1 / hg2; 
-        CHECK(((hg3.getNumerator() == 2) && (hg3.getDenominator() == 1)));
+        CHECK(((hg3.getNumerator() == 3) && (hg3.getDenominator() == 1)));
    }
     TEST_CASE(" * Test")
     {
